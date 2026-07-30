@@ -323,4 +323,31 @@ document.addEventListener("DOMContentLoaded", () => {
             playPitchedClick(pitches[index]);
         });
     });
+
+    // 11. Smooth Page Transition Logic
+    const overlay = document.querySelector('.page-transition-overlay');
+    if (overlay) {
+        // Slide up on load
+        setTimeout(() => {
+            overlay.classList.add('fade-out');
+        }, 100);
+
+        // Intercept local page navigation to slide down overlay
+        const pageLinks = document.querySelectorAll('a[href$=".html"], a[href^="index.html#"], .proj-link-btn[href="index.html"]');
+        pageLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                const targetHref = link.getAttribute('href');
+                if (targetHref && targetHref.includes('.html')) {
+                    e.preventDefault();
+                    overlay.classList.remove('fade-out');
+                    overlay.classList.add('fade-in');
+                    
+                    playClickSound();
+                    setTimeout(() => {
+                        window.location.href = targetHref;
+                    }, 600);
+                }
+            });
+        });
+    }
 });

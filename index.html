@@ -12,6 +12,9 @@
 </head>
 <body>
 
+    <!-- Page Transition Overlay -->
+    <div class="page-transition-overlay"></div>
+
     <!-- Animated background orbs -->
     <div class="bg-orb orb-1"></div>
     <div class="bg-orb orb-2"></div>
@@ -77,7 +80,7 @@
                 <ul class="nav-list">
                     <li><a href="#hakkimda">Hakkımda</a></li>
                     <li><a href="#kariyer">Kariyer</a></li>
-                    <li><a href="#projeler">Çalışmalarım</a></li>
+                    <li><a href="projeler.html">Çalışmalarım</a></li>
                     <li><a href="#gonulluluk">Gönüllülük</a></li>
                     <li><a href="#iletisim">İletişim</a></li>
                 </ul>
@@ -168,174 +171,16 @@
             <hr>
 
             <!-- Çalışmalarım (Projeler) Bölümü -->
-            <section id="projeler" class="section-projects">
+            <section id="projeler" class="section-projects-cta">
                 <h2>Çalışmalarım</h2>
-                <p>Tasarım, teknoloji ve araştırmanın kesişiminde ürettiğim projeleri burada bir araya getiriyorum. Her çalışma, hem yaratıcı yaklaşımımı hem de problem çözme süreçlerimi yansıtan özgün bir deneyim sunuyor.</p>
-                
-                <!-- Project Category Tabs -->
-                <div class="project-tabs">
-                    <button class="project-tab-btn active" data-filter="all">Tümü</button>
-                    <button class="project-tab-btn" data-filter="design">Tasarım &amp; Markalama</button>
-                    <button class="project-tab-btn" data-filter="3d-video">3D &amp; Video</button>
-                    <button class="project-tab-btn" data-filter="research">Akademik Araştırma</button>
-                </div>
-
-                <div class="grid-container">
-                    <article class="card project-card category-research">
-                        <!-- TÜBİTAK Proje Görseli -->
-                        <figure class="card-figure">
-                            <img src="tubitak-proje-gorseli.png" alt="Görsel Habercilikte Yapay Zekânın Rolü Proje Çıktıları" class="card-img" width="300">
-                            <figcaption>TÜBİTAK 2209-A Projesi Araştırma Çıktıları</figcaption>
-                        </figure>
-                        <span class="card-badge">Akademik Araştırma</span>
-                        <h3>Görsel Habercilikte Yapay Zekânın Rolü (TÜBİTAK 2209-A)</h3>
-                        <p><strong>Destekleyen Kurum:</strong> TÜBİTAK (Üniversite Öğrencileri Araştırma Projeleri Destekleme Programı)</p>
-                        <p>Görsel içerik üretimi, prompt mühendisliği ve habercilikte AI araçlarının (Leonardo AI vb.) etik ve pratik etkilerini inceleyen kapsamlı akademik araştırma projesi. Bu araştırma, yapay zekâ tabanlı uygulamaların görsel habercilikteki rolünü incelemektedir.</p>
-                    </article>
-
-                    <article class="card project-card category-3d-video">
-                        <!-- Yapay Zekâ Belgeseli Görseli -->
-                        <figure class="card-figure">
-                            <img src="yapay-zeka-belgeseli.jpg" alt="Yapay Zekâ Belgeseli" class="card-img" width="300">
-                            <figcaption>Yapay Zekâ Belgeseli Kapak Görseli</figcaption>
-                        </figure>
-                        <span class="card-badge">Video &amp; Kurgu</span>
-                        <h3>Yapay Zekâ Belgeseli – Konsept, Prodüksiyon ve Kurgu</h3>
-                        <p><strong>Alanlar:</strong> Belgesel Yapımı, Araştırma, Video Kurgu, Post-Prodüksiyon</p>
-                        <p>Yapay zekâ teknolojilerinin gelişimini ve toplumsal etkilerini ele alan konsept ve kurgu tasarımı.</p>
-                        <a href="https://www.youtube.com/watch?v=S2INiKRwvvY" target="_blank" rel="noopener noreferrer" class="proj-link-btn">
-                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg> Belgeseli İzle
-                        </a>
-                    </article>
-
-                    <article class="card project-card category-design">
-                        <!-- Çöpçik Görseli -->
-                        <figure class="card-figure">
-                            <img src="copcik-ambalaj-tasarimi.png" alt="Çöpçik – Ambalaj Tasarımı" class="card-img" width="300">
-                            <figcaption>Çöpçik Ambalaj Tasarımı Detayı</figcaption>
-                        </figure>
-                        <span class="card-badge">Ambalaj &amp; Karakter</span>
-                        <h3>Çöpçik – Ambalaj Tasarımı</h3>
-                        <p><strong>Alanlar:</strong> Marka Kimliği, Karakter Tasarımı, Ambalaj Tasarımı</p>
-                        <p>Özgün bir karakter tasarımı ve sürdürülebilir marka kimliği çerçevesinde kurgulanmış ambalaj çalışması.</p>
-                    </article>
-
-                    <article class="card project-card category-design">
-                        <!-- EcoEnergize Görseli -->
-                        <figure class="card-figure">
-                            <img src="ecoenergize-kurumsal-kimlik-tasarimi.png" alt="EcoEnergize – Kurumsal Kimlik Tasarımı" class="card-img" width="300">
-                            <figcaption>EcoEnergize Logo ve Kurumsal Tasarımı</figcaption>
-                        </figure>
-                        <span class="card-badge">Kurumsal Kimlik</span>
-                        <h3>EcoEnergize – Kurumsal Kimlik Tasarımı</h3>
-                        <p><strong>Alanlar:</strong> Sürdürülebilir Enerji Markası için Kurumsal Kimlik Kılavuzu Tasarımı</p>
-                        <p>Doğa dostu ve modern bir enerji girişimi için logo, renk paleti ve tipografi standartlarını tanımlayan kapsamlı marka kılavuzu.</p>
-                        <a href="https://17f446e2c1.clvaw-cdnwnd.com/2ca57e77a80f981fd0062e7b07d07f53/200000091-cf99fcf9a1/EcoEnergize.pdf?ph=17f446e2c1" target="_blank" rel="noopener noreferrer" class="proj-link-btn">
-                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg> Kılavuzu İndir (PDF)
-                        </a>
-                    </article>
-
-                    <article class="card project-card category-design">
-                        <!-- Cesur İtfaiyeciler Görseli -->
-                        <figure class="card-figure">
-                            <img src="cesur-itfaiyeciler.png" alt="Cesur İtfaiyeciler – Çocuk Kitabı Tasarımı" class="card-img" width="300">
-                            <figcaption>Cesur İtfaiyeciler İllüstrasyon ve Tasarımı</figcaption>
-                        </figure>
-                        <span class="card-badge">İllüstrasyon</span>
-                        <h3>Cesur İtfaiyeciler – Çocuk Kitabı Tasarımı</h3>
-                        <p><strong>Alanlar:</strong> Yazım, İllüstrasyon ve Sayfa Tasarımı</p>
-                        <p>Çocuklar için eğitici ve eğlenceli bir hikaye kurgusuyla hazırlanan, renkli çizim ve sayfa mizanpaj tasarımı.</p>
-                    </article>
-
-                    <article class="card project-card category-3d-video">
-                        <!-- Hacı Bayram Camii Görseli -->
-                        <figure class="card-figure">
-                            <img src="haci-bayram-i-veli-camii.jpg" alt="Hacı Bayram-ı Veli Camii" class="card-img" width="300">
-                            <figcaption>Hacı Bayram-ı Veli Camii Modelleme ve Render</figcaption>
-                        </figure>
-                        <span class="card-badge">3D Modelleme &amp; Tanıtım</span>
-                        <h3>Hacı Bayram-ı Veli Camii – Kültürel Miras Tanıtım Projesi</h3>
-                        <p><strong>Alanlar:</strong> Broşür, Kartpostal, Render, Model ve Tanıtım Materyalleri Tasarımı</p>
-                        <p>Tarihi mirasın dijital modeller, 3D renderlar ve basılı tanıtım materyalleri (kartpostal, broşür) aracılığıyla tanıtılması projesi.</p>
-                        <a href="https://www.youtube.com/watch?v=c44tZE-A-9g" target="_blank" rel="noopener noreferrer" class="proj-link-btn">
-                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg> Videoyu İzle
-                        </a>
-                    </article>
-
-                    <article class="card project-card category-3d-video">
-                        <!-- Yansıma Dergi Görseli -->
-                        <figure class="card-figure">
-                            <img src="yansima-dergi-tasarimi.png" alt="Yansıma - Yapay Zekâ Dergisi Tasarımı" class="card-img" width="300">
-                            <figcaption>Yansıma Dergisi Kapak Tasarımı</figcaption>
-                        </figure>
-                        <span class="card-badge">Yayın Tasarımı</span>
-                        <h3>Yansıma - Yapay Zekâ Dergisi Tasarımı</h3>
-                        <p><strong>Alanlar:</strong> Editörlük, İçerik Üretimi, Kapak Tasarımı, Sayfa Düzeni</p>
-                        <p>Yapay zekâ odaklı makaleler içeren, modern tipografi ve görsel hiyerarşiye sahip dergi tasarımı.</p>
-                    </article>
-
-                    <article class="card project-card category-design">
-                        <!-- Tipografi Portfolyosu Görseli -->
-                        <figure class="card-figure">
-                            <img src="tipografi-portfolyosu.png" alt="Tipografi Portfolyosu" class="card-img" width="300">
-                            <figcaption>Tipografi Portfolyosu Kapak Tasarımı</figcaption>
-                        </figure>
-                        <span class="card-badge">Tipografi</span>
-                        <h3>Tipografi Portfolyosu – Tipografik Çalışmalar Serisi</h3>
-                        <p><strong>Alanlar:</strong> Kartvizit, İllüstrasyon, Poster, Font Geliştirme, Haiku Tasarımı</p>
-                        <p>Yazı karakterlerinin görsel gücünü ortaya koyan, kartvizitlerden posterlere ve font geliştirmeye uzanan deneysel seri.</p>
-                        <a href="https://17f446e2c1.clvaw-cdnwnd.com/2ca57e77a80f981fd0062e7b07d07f53/200000176-4ff6a4ff6c/Tipografi%20Portfolio.pdf?ph=17f446e2c1" target="_blank" rel="noopener noreferrer" class="proj-link-btn">
-                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg> Portfolyoyu İndir (PDF)
-                        </a>
-                    </article>
-
-                    <article class="card project-card category-design">
-                        <!-- Türk-Japon İlişkileri Görseli -->
-                        <figure class="card-figure">
-                            <img src="turk-japon-diplomatik-iliskilerinin-100-yili-brosur-tasarimi.png" alt="Türk–Japon Diplomatik İlişkilerinin 100. Yılı Broşür Tasarımı" class="card-img" width="300">
-                            <figcaption>Türk-Japon 100. Yılı Sergi Tasarımları</figcaption>
-                        </figure>
-                        <span class="card-badge">Kültürel Sergi</span>
-                        <h3>Türk–Japon Diplomatik İlişkilerinin 100. Yılı Broşür Tasarımı</h3>
-                        <p><strong>Etkinlik:</strong> "Tasarımda Kültürel İzlenimler" Sergisi – Türk Japon Vakfı</p>
-                        <p>İki ülke arasındaki diplomatik bağın yüzüncü yılı onuruna hazırlanan kültürel izlenimler sergisi tanıtım materyalleri tasarımı.</p>
-                    </article>
-
-                    <article class="card project-card category-3d-video">
-                        <!-- INNOVIA Görseli -->
-                        <figure class="card-figure">
-                            <img src="innovia-teknoloji-ve-inovasyon-festivali-tasarimi.png" alt="INNOVIA – Teknoloji ve İnovasyon Festivali Tasarimi" class="card-img" width="300">
-                            <figcaption>INNOVIA Festivali Kurumsal Kimlik ve Program Kitapçığı</figcaption>
-                        </figure>
-                        <span class="card-badge">Festival Kimliği</span>
-                        <h3>INNOVIA – Teknoloji ve İnovasyon Festivali Tasarımı</h3>
-                        <p><strong>Alanlar:</strong> Kurumsal Kimlik, Sosyal Medya, Program Kitapçığı, Video İçerikleri</p>
-                        <p>Gelecek odaklı bir teknoloji festivalinin tüm tanıtım, video, sosyal medya ve basılı kitapçık süreçlerinin yönetimi.</p>
-                    </article>
-
-                    <article class="card project-card category-3d-video">
-                        <!-- Blender 3D Görseli -->
-                        <figure class="card-figure">
-                            <img src="blender-3d-modelleme-ve-animasyon.png" alt="Blender 3D Modelleme ve Animasyon" class="card-img" width="300">
-                            <figcaption>Blender 3D Modelleme ve Render Detayı</figcaption>
-                        </figure>
-                        <span class="card-badge">3D Animasyon</span>
-                        <h3>Blender 3D Modelleme ve Animasyon</h3>
-                        <p><strong>Alanlar:</strong> Modelleme, Işık &amp; Materyal Tasarımı, Animasyon, Render</p>
-                        <p>Blender ortamında gerçekleştirilmiş üç boyutlu nesne modelleme, sahne ışıklandırması ve render alma süreçleri.</p>
-                    </article>
-
-                    <article class="card project-card category-design">
-                        <!-- Görsel İletişim Tasarımı Pasaportu Görseli -->
-                        <figure class="card-figure">
-                            <img src="tasarim-pasaportu.jpg" alt="Görsel İletişim Tasarımı Pasaportu" class="card-img" width="300">
-                            <figcaption>Görsel İletişim Tasarımı Pasaportu Tasarımı</figcaption>
-                        </figure>
-                        <span class="card-badge">Konsept Tasarım</span>
-                        <h3>Görsel İletişim Tasarımı Pasaportu</h3>
-                        <p>Seyahat ve keşif teması üzerine kurgulanmış, marka yerleşimi ve layout süreçleri tamamlanmış kurumsal reklam projesi.</p>
-                        <p><strong>Kampanya Sloganı:</strong> <em>"Tasarımın dili evrenseldir. Sınırların ötesine GİT."</em></p>
-                    </article>
+                <p>Tasarım, teknoloji ve araştırmanın kesişiminde ürettiğim projeleri ayrıntılı olarak incelemek için portfolyo sayfama göz atın.</p>
+                <div class="cta-card card" style="align-items: center; text-align: center; padding: 3rem 2rem;">
+                    <h3>Tüm Projeleri Keşfet</h3>
+                    <p>Görsel Kimlik, 3D Modelleme, Animasyon ve Akademik Araştırma Projeleri</p>
+                    <a href="projeler.html" class="cv-btn explore-btn" style="margin-top: 1.5rem; display: inline-flex; align-items: center; gap: 8px;">
+                        Çalışmaları Gör 
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                    </a>
                 </div>
             </section>
 
